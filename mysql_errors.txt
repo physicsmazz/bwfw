@@ -1,0 +1,2 @@
+[2011-06-30 07:16:14] Message: Table 'betterways.mailinglists' doesn't exist
+[2011-06-30 07:18:46] Message: Table 'betterways.mailinglists' doesn't exist
