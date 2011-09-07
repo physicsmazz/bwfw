@@ -21,7 +21,7 @@ try {
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Best Price Bed Bug Mattress Covers Products Page</title>
+    <title>Better Ways for Women</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +31,7 @@ try {
     <link rel="stylesheet" href="css/jquery-ui-1.8.9.custom.css">
     <script src="js/libs/modernizr.min.js"></script>
 <?php
-//require_once ('includes/analytics.inc.php');
+require_once ('includes/analytics.inc.php');
     ?>
 </head>
 <body>
@@ -46,7 +46,6 @@ try {
     <div id="shortLine"></div>
     <div id="innerContainer" class="contactPage">
         <?php require_once 'includes/header.inc.php'; ?>
-        <?php require_once 'includes/leftCol.inc.php'; ?>
         <div id="mainPage">
             <form id="contactForm" action="sendMail.php">
                 <div id="leftInput">
