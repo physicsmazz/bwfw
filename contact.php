@@ -1,7 +1,5 @@
 <?php
 require_once 'includes/config.inc.php';
-
-$mysql = new Mysql();
 try {
 
 } catch (EmailException $e) {
@@ -39,14 +37,9 @@ require_once ('includes/analytics.inc.php');
     You must have JavaScript installed.
 </div>
 <div id="container">
-    <div id="topLine"></div>
-    <div id="secondLine"></div>
-    <div id="thirdLine"></div>
-    <div id="fourthLine"></div>
-    <div id="shortLine"></div>
-    <div id="innerContainer" class="contactPage">
-        <?php require_once 'includes/header.inc.php'; ?>
-        <div id="mainPage">
+        <?php
+        $page = 'contact';
+        require_once 'includes/header.inc.php'; ?>
             <form id="contactForm" action="sendMail.php">
                 <div id="leftInput">
                     <label for="name">Name</label>
@@ -68,11 +61,7 @@ require_once ('includes/analytics.inc.php');
                     <button id="sendBtn" type="submit">SEND</button>
                 </div>
             </form>
-        </div>
-
-
 <?php require_once 'includes/footer.inc.php'; ?>
-    </div>
  </div><!-- end container -->
 
 <?php

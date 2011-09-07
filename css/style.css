@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'CasaRegular';
+    src: url('fonts/casa-webfont.eot');
+    src: url('fonts/casa-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/casa-webfont.woff') format('woff'),
+         url('fonts/casa-webfont.ttf') format('truetype'),
+         url('fonts/casa-webfont.svg#CasaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 html {
   font-size:100%;
   overflow-y:scroll;
@@ -342,31 +352,78 @@ form label {
 }
 
 
+
+h3{
+    font-family: CasaRegular, arial, sans-serif;
+    font-size: 24px;
+}
+p{
+    font-family: Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 #container {
     width:1206px;
     height: 1070px;
     margin:10px auto;
     position: relative;
     background: url("../imgs/container_bg.png") no-repeat;
-    font-family: 'Tenor Sans', Helvetica, arial, sans-serif;
 }
 header{
-  height:50px;
+  height:60px;
     overflow: hidden;
 }
 header nav li {
   float:left;
   text-align:center;
   font-weight:bold;
-  width: 100px;
+  width: 160px;
 }
 header nav li a{
+    font-family: casaregular, arial, sans-serif;
+    font-size: 16px;
     display: block;
     cursor: pointer;
-    line-height: 50px;
+    line-height: 60px;
+    text-decoration: none;
+}
+header nav li a.current{
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255,0,0,0.5),
+                10px 5px 10px rgba(255,0,0,0.8),
+                10px -5px 20px rgba(255,0,0,0.8),
+                -10px 5px 20px rgba(255,0,0,0.8),
+                -10px -5px 20px rgba(255,0,0,0.8);
+    text-decoration: underline;
 }
 header #shoppingCart {
-  float:right;
+    float:right;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+header #cartLink {
+    font-family: 'casaregular', arial, sans-serif;
+    text-decoration: none;
+    font-size: 24px;
+    text-shadow: 1px 1px 4px #666;
+    font-weight: bold;
+}
+header #cartIcon{
+    background: url("../imgs/shoppingcart_icon.png") no-repeat;
+    width: 62px;
+    height: 51px;
+    float: right;
+    margin-right: 20px;
+    position: relative;
+}
+header #cartIcon #numItems{
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    left: 17px;
+    position: absolute;
+    text-align: center;
+    top: 10px;
 }
 #mainTop{
     overflow: hidden;
@@ -377,10 +434,14 @@ header #shoppingCart {
 }
 #mainTop #textBox{
     float: right;
-    width: 656px;
-    height: 340px;
-    padding: 70px 50px;
+    width: 650px;
+    height: 355px;
+    padding: 65px 56px 70px 50px;
     background: url("../imgs/text_bg.png") no-repeat;
+    font-size: 16px;
+}
+#textBox p{
+    margin: 0 0 15px 0;
 }
 
 #mainBottom{
@@ -390,21 +451,28 @@ header #shoppingCart {
     margin: 0 25px 50px;
 }
 #mainBottom #mailingListForm{
-    height: 200px;
     float: left;
+    height: 100px;
+    margin: 40px 0 60px 30px;
 }
 #mailingListForm #signUpBtn{
     background: url("../imgs/signup_btn.png") no-repeat;
-    width: 82px;
-    height: 28px;
+    width: 90px;
+    height: 32px;
     text-indent: -9999px;
     border: none;
     padding: 0;
-    margin: 0 0 0 -5px;
+    margin: 0 0 0 -7px;
 }
-#mailingListForm #signUpBtn:active{
+#mailingListForm label{
+    color: #666666;
+    display: block;
+    font-family: georgia, serif;
+    font-size: 16px;
+    font-style: italic;
+    width: 220px;
+}
 
-}
 #mailingListForm input{
     border: 1px solid #000;
     height: 25px;
@@ -412,6 +480,7 @@ header #shoppingCart {
     padding: 0;
     margin-top: -5px;
     box-shadow: inset 1px 1px 4px #666;
+    width: 230px;
 }
 #mainBottom #images{
     width: 900px;
@@ -438,23 +507,112 @@ header #shoppingCart {
 
 }
 #mainBottom #evarraText{
-    width: 760px;
-    height: 180px;
+    background: url("../imgs/evarra_white_block.png") no-repeat scroll 50% 80% transparent;
     float: right;
-    background: url("../imgs/evarra_white_block.png") no-repeat 50% 100%;
+    font-size: 18px;
+    height: 180px;
+    margin-right: 90px;
     text-align: center;
-    margin-right: 60px;
+    width: 700px;
 }
 
+#mainProd{
+    position: relative;
+    overflow: auto;
+}
+#mainProd #imageDiv{
+    height: 600px;
+    margin-left: 5px;
+    float:left;
+    top: 10px;
+    width: 446px;
+}
+#mainProd #textDiv{
+    float:right;
+    margin-right: 10px;
+    top:10px;
+    width: 745px;
+    height: 600px
+}
+#mainProd #productDetails{
+    height: 350px;
+    width: 95%;
+    margin: 10px auto;
+    border: 1px solid #666;
+    clear: both;
+}
+#mainProd #qty{
+    width: 20px;
+}
+#mainProd #addBtn{
+    margin: 10px 30px;
+}
+#imageDiv #mainImage{
+    margin: 5px auto;
+    height: 400px;
+    width: 380px;
+    border: 2px solid black;
+    display: block;
+}
+#imageDiv #imageViews{
+    margin: 5px auto;
+    width: 380px;
+    overflow: auto;
+}
+#imageDiv #imageViews img{
+    width: 75px;
+    height: 75px;
+    border: 1px solid #000;
+    display: block;
+    float: left;
+    margin: 0 10px;
+}
+#textDiv ul li{
+    width: 40%;
+    float: left;
+    margin: 10px 5%;
+    text-align: center;
+}
+
+#contactForm{
+    width: 600px;
+    margin: 10px 30px;
+    border: 2px solid #000;
+}
+#contactForm #leftInput, #contactForm #rightInput{
+    width: 40%;
+    float: left;
+    margin: 5px 5%;
+}
+#contactForm #bottomInput{
+    clear: both;
+
+}
+
+
+
+
+
 footer{
-    margin-top: 20px;
     height: 75px;
     position: relative;
+
 }
 footer #facebookLink{
     position: absolute;
     top: 0;
     right: 20px;
+    background: url("../imgs/facebook_logo.png") no-repeat;
+    width: 41px;
+    height: 59px;
+    text-indent: -9999px;
+}
+footer #siteLink{
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    font-family: georgia;
+    font-style: italic;
 }
 
 .italic { font-style:italic; }

@@ -30,7 +30,10 @@ require_once ('includes/analytics.inc.php');
     You must have JavaScript installed.
 </div>
 <div id="container">
-    <?php require_once 'includes/header.inc.php'; ?>
+    <?php
+        $page = 'home';
+        require_once 'includes/header.inc.php';
+    ?>
 
     <div id="mainPage">
         <div id="mainTop">
@@ -65,7 +68,7 @@ require_once ('includes/analytics.inc.php');
             </div>
 
             <form id="mailingListForm" action="sendMail.php" method="post">
-                <label for="email">Email: </label>
+                <label for="email">JOIN OUR MAILING LIST</label>
                 <input type="email" name="email" id="email">
                 <button type="submit" id="signUpBtn">Sign Up</button>
             </form>
