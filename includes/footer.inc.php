@@ -1,9 +1,4 @@
 <footer>
-<!--    <ul>-->
-<!--        <li>link</li>-->
-<!--        <li>link</li>-->
-<!--        <li>link</li>-->
-<!--        <li>link</li>-->
-<!--        <li>link</li>-->
-<!--    </ul>-->
+    <a id="facebookLink" href="http://www.facebook.com" target="_blank">facebook</a>
+    <a id="siteLink" href="http://www.betterwaysforwomen.com">www.betterwaysforwomen.com</a>
 </footer>

@@ -13,13 +13,8 @@ body {
   outline:0;
   font-size:13px;
   vertical-align:baseline;
-  background: url("../imgs/bg_grad.png") repeat-y;
-    -moz-background-size: 100%;
-    -webkit-background-size: 100%;
-    -o-background-size: 100%;
-    -khtml-background-size: 100%;
-    background-size: 100%;
-    width:100%;
+  background: #f3e0ed;
+  width:100%;
   position:relative;
   *font-size:small;
 }
@@ -348,64 +343,99 @@ form label {
 
 
 #container {
-    width:960px;
+    width:1206px;
+    height: 1070px;
     margin:10px auto;
     position: relative;
-    border: 1px solid #ddd;
-    background: url("../imgs/flower_trans.png") no-repeat 50% top;
-    overflow: auto;
+    background: url("../imgs/container_bg.png") no-repeat;
     font-family: 'Tenor Sans', Helvetica, arial, sans-serif;
 }
-header h1.ir{
-    background: url("../imgs/bwfw.png") no-repeat;
-    width: 850px;
-    height: 100px;
-    margin: 10px auto;
+header{
+  height:50px;
+    overflow: hidden;
 }
-#leftCol{
-    background: url("../imgs/logo.png") no-repeat;
-    width: 170px;
-    height: 500px;
+header nav li {
+  float:left;
+  text-align:center;
+  font-weight:bold;
+  width: 100px;
+}
+header nav li a{
+    display: block;
+    cursor: pointer;
+    line-height: 50px;
+}
+header #shoppingCart {
+  float:right;
+}
+#mainTop{
+    overflow: hidden;
+}
+#mainTop #logo{
+    margin: 10px 35px;
     float: left;
 }
-#mainInfo{
-    width: 770px;
+#mainTop #textBox{
     float: right;
+    width: 656px;
+    height: 340px;
+    padding: 70px 50px;
+    background: url("../imgs/text_bg.png") no-repeat;
+}
 
+#mainBottom{
+    overflow: auto;
 }
-#mainInfo h2{
-    font-size: 30px;
+#mainBottom #evarraLogo{
+    margin: 0 25px 50px;
 }
-#mainInfo p {
-    font-size: 17px;
-    margin: 10px;
-}
-#comingSoon{
+#mainBottom #mailingListForm{
+    height: 200px;
     float: left;
-    border: 1px solid #ccc;
-    padding: 20px;
-    width: 410px;
-    margin: 20px 10px 20px -50px;
-    background-color: #D7E3F3;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    -moz-box-shadow: 2px 2px 4px #222;
-    -webkit-box-shadow: 2px 2px 4px #222;
-    box-shadow: 2px 2px 4px #222;
 }
-.hsla #comingSoon{
-    background-color: hsla(193, 100%, 84%, .4);
+#mainBottom #images{
+    width: 900px;
+    height: 260px;
+    float: right;
+    margin-top: -20px;
 }
-#comingSoon h3, #comingSoon h4{
-    margin: 5px 0;
+#mainBottom #imageLeft, #mainBottom #imageRight{
+    width: 25%;
+    float: left;
+    position: relative;
+    height: 260px;
+}
+#mainBottom #imageLeft img, #mainBottom #imageRight img{
+    position: absolute;
+    bottom: 0;
+}
+#mainBottom #imageCenter{
+    width: 50%;
+    float: left;
+}
+#mainBottom #images img{
+    box-shadow: 4px 4px 4px #666;
+
+}
+#mainBottom #evarraText{
+    width: 760px;
+    height: 180px;
+    float: right;
+    background: url("../imgs/evarra_white_block.png") no-repeat 50% 100%;
+    text-align: center;
+    margin-right: 60px;
 }
 
-#evarraLogo{
-    float:right;
-    margin: 10px 0;
+footer{
+    margin-top: 20px;
+    height: 75px;
+    position: relative;
 }
-
+footer #facebookLink{
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
 
 .italic { font-style:italic; }
 .underline { text-decoration:underline; }
