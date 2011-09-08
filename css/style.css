@@ -516,6 +516,8 @@ header #cartIcon #numItems{
     width: 700px;
 }
 
+
+/*PRODUCTS PAGE*/
 #mainProd{
     position: relative;
     overflow: auto;
@@ -574,6 +576,8 @@ header #cartIcon #numItems{
     text-align: center;
 }
 
+
+/*CONTACT PAGE*/
 #contactForm{
     width: 600px;
     margin: 10px 30px;
